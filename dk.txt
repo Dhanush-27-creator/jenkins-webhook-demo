@@ -1,2 +1,3 @@
 "Hello jenkins webhook" 
 "webhook working test" 
+"New build trigger" 
