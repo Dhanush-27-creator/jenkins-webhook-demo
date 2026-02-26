@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage('Git Pull') {
+            steps {
+                git 'https://github.com/Dhanush-27-creator/jenkins-webhook-demo.git' 
+            }
+        }
+        stage('Check File') {
+            steps {
+                sh 'ls -l'
+                sh 'cat test.txt'
+            }
+        }
+    }
+}
